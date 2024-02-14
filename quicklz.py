@@ -157,7 +157,7 @@ class QuickLZ:
 
                     else:
                         offset = fetch >> 15
-                        matchlen((fetch >> 7) & 255) + 3
+                        matchlen = ((fetch >> 7) & 255) + 3
                         src += 4
 
                     offset2 = (dst - offset) & 0xFFFFFFFF
